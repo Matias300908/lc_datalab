@@ -1,3 +1,3 @@
 # Bitacora Semana 1
 
-## Prueba
+## Descripcion de la Actividad
