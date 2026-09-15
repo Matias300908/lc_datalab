@@ -1,16 +1,11 @@
-PI = 3.1416
-radio = 4
-
-## EJEMPLO SEMANA 2
-
 def main():
-    print("=== DataLab | Semana 2 ===")
-    print("Procesamiento de un registro con múltiples condiciones.")
+    print("=== DataLab | Semana 1 ===")
+    print("Versión actualizada del procesamiento de un registro.")
 
     registro_id = input("Ingrese el identificador del registro: ")
     valor = float(input("Ingrese el valor del registro: "))
 
-    # Reglas evaluadas con if, elif y else para todos los casos (Bajo, Límite, Normal, Alto):
+    # Reglas evaluadas con if, elif y else:
     if valor < 10:
         clasificacion = "BAJO (Por debajo del límite)"
     elif valor == 10 or valor == 50:
@@ -28,4 +23,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
