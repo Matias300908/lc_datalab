@@ -15,4 +15,3 @@ E --> G[Mostrar resultado<br/>Registro, valor y clasificación]
 F --> G
 G --> H([Fin])
 ```
-
