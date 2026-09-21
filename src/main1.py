@@ -52,4 +52,21 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
+
+    nivel_de_educacion = 2
+match nivel_de_educacion:
+    case 5:
+        print("Educacion superior")
+    case 4:
+        print("Nivel de educación bueno")
+    case 3:
+      print("Nivel de educación regular")
+    case 2:
+        print("Nivel de educación bajo")
+    case 1:
+        print("Nivel de educación muy bajo")
+    case n if n <= 0:
+        print("Ingrese un valor entre 1 y 5")
+    case _:
+        print("Nivel de educación desconocido")
     
