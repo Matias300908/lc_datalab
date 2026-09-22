@@ -37,3 +37,20 @@ print(f"La edad 15 es: {categorize_age(15)}")
 print(f"La edad 30 es: {categorize_age(30)}")
 print(f"La edad 70 es: {categorize_age(70)}")
 print(f"La edad -2 es: {categorize_age(-2)}")
+
+
+# EJEMPLO ANGEL
+
+# Solicitamos al usuario que ingrese su género
+genero = input("Por favor, ingresa tu género (Masculino / Femenino): ")
+
+# Limpiamos espacios en blanco y convertimos el texto a minúsculas para facilitar la validación
+genero_limpio = genero.strip().lower()
+
+# Realizamos las validaciones con if
+if genero_limpio == "masculino":
+    print("El género validado es: Masculino.")
+elif genero_limpio == "femenino":
+    print("El género validado es: Femenino.")
+else:
+    print("Entrada no válida. Por favor, ingresa 'Masculino' o 'Femenino'.")
