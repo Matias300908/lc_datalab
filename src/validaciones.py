@@ -1,5 +1,5 @@
 # Validacion Match-case
- nivel_de_educacion = 2
+nivel_de_educacion = 2
 match nivel_de_educacion:
     case 5:
         print("Educacion superior")
@@ -53,4 +53,22 @@ if genero_limpio == "masculino":
 elif genero_limpio == "femenino":
     print("El género validado es: Femenino.")
 else:
-    print("Entrada no válida. Por favor, ingresa 'Masculino' o 'Femenino'.")
+    print("Entrada no válida. Por favor, ingresa 'Masculino' o 'Femenino'.")  
+
+#EJEMPLO ANGEL 2
+
+# Solicitamos el estado civil al usuario
+estado_civil = input("Por favor, ingresa tu estado civil (Soltero / Casado / Divorciado / Viudo): ")
+# Limpiamos el texto (quitamos espacios y pasamos a minúsculas)
+estado_civil_limpio = estado_civil.strip().lower()
+# Validamos la opción ingresada usando condicionales
+if estado_civil_limpio == "soltero" or estado_civil_limpio == "soltera":
+    print("Estado civil registrado: Soltero/a.") 
+elif estado_civil_limpio == "casado" or estado_civil_limpio == "casada":
+    print("Estado civil registrado: Casado/a.")
+elif estado_civil_limpio == "divorciado" or estado_civil_limpio == "divorciada":
+    print("Estado civil registrado: Divorciado/a.")   
+elif estado_civil_limpio == "viudo" or estado_civil_limpio == "viuda":
+    print("Estado civil registrado: Viudo/a.")   
+else:
+    print("Opción no válida. Por favor, ingresa Soltero, Casado, Divorciado o Viudo.")
