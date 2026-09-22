@@ -72,3 +72,31 @@ elif estado_civil_limpio == "viudo" or estado_civil_limpio == "viuda":
     print("Estado civil registrado: Viudo/a.")   
 else:
     print("Opción no válida. Por favor, ingresa Soltero, Casado, Divorciado o Viudo.")
+
+# Ejemplo Dluca (1)
+
+# Crear una contraseña
+contraseña = input("Crea una contraseña: ")
+
+# Digitar la contraseña para comprobarla
+contraseña_digitada = input("Digite su contraseña: ")
+
+# Comparar las dos contraseñas
+if contraseña == contraseña_digitada:
+    print("La contraseña es correcta.")
+else:
+    print("La contraseña no es correcta.")
+
+    #Ejemplo Dluca (2)
+    
+    # Crear el correo
+correo_creado = input("Cree su correo: ")
+
+# Digitar el correo para verificar
+correo_ingresado = input("Digite su correo: ")
+
+# Verificar si el correo ingresado es igual al que creó
+if correo_ingresado == correo_creado:
+    print("El correo es correcto.")
+else:
+    print("El correo no es correcto.")
