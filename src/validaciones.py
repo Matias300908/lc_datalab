@@ -1,0 +1,39 @@
+# Validacion Match-case
+ nivel_de_educacion = 2
+match nivel_de_educacion:
+    case 5:
+        print("Educacion superior")
+    case 4:
+        print("Nivel de educación bueno")
+    case 3:
+      print("Nivel de educación regular")
+    case 2:
+        print("Nivel de educación bajo")
+    case 1:
+        print("Nivel de educación muy bajo")
+    case n if n <= 0:
+        print("Ingrese un valor entre 1 y 5")
+    case _:
+        print("Nivel de educación desconocido")
+        
+        
+   # Validacion Match-case 2 
+def categorize_age(age):
+    match age:
+        case _ if age < 0:
+            return "Edad inválida"
+        case _ if 0 <= age <= 12:
+            return "Niño"
+        case _ if 13 <= age <= 17:
+            return "Adolescente"
+        case _ if 18 <= age <= 64:
+            return "Adulto"
+        case _ if age >= 65:
+            return "Adulto mayor"
+
+# Ejemplos de uso
+print(f"La edad 5 es: {categorize_age(5)}")
+print(f"La edad 15 es: {categorize_age(15)}")
+print(f"La edad 30 es: {categorize_age(30)}")
+print(f"La edad 70 es: {categorize_age(70)}")
+print(f"La edad -2 es: {categorize_age(-2)}")
